@@ -12,6 +12,7 @@ export class DataBindingComponent implements OnInit {
   valorAtual: String = '';
   valorSalvo: String = '';
   isMouseOver: Boolean = false;
+  nome: String = 'Carlos';
 
   botaoClicado() {
     alert('Botao Clicado!');
@@ -36,3 +37,11 @@ export class DataBindingComponent implements OnInit {
   }
 
 }
+
+/**
+ * <TEMPLATE>                                                   {COMPONENT}
+ *        <-----------------{{ valor }}----------------------------
+ *        <-----------------[propriedade]="valor"------------------
+ *        -----------------(evento)="handler"--------------------->
+ *        <------------[(ngModel)]="propriedade"------------------> Two Way data-binding 
+ */

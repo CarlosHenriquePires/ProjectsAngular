@@ -57,8 +57,28 @@
       <br><br>
 
       <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">Passe o mouse sobre mim!</span>
-
     </div>
-
   </article>
 </section>
+<br><br>
+<section>
+  <article>
+    <h3> Two way Data Binding</h3>
+    <div>
+      <input type="text"
+      [value]="nome"
+      (input)=" nome = $event.target.value"
+      >
+      <p>Valor digitado: {{ nome }}</p>
+
+      <input type="text"
+      [ngModel]="nome"
+      (ngModelChange)="nome = $event"
+      > <!-- ngModelChange já reconhece que queremos o valor atual do value-->
+
+      <input type="text" [(ngModel)]="nome">
+
+    </div>
+  </article>
+</section>
+<br><br>
