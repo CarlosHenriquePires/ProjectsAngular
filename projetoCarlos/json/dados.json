@@ -1,0 +1,31 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Tony Stark",
+      "endereco": "tony@mcu.com",
+      "dataNascimento": "001-123-4567",
+      "cpf": "000-000-000.00",
+      "sexo": "Masculino",
+      "estadoCivil": "Casado"
+    },
+    {
+      "id": 2,
+      "nome": "Black Widow",
+      "endereco": "em casa",
+      "dataNascimento": "001-123-4567",
+      "cpf": "111-111-111.11",
+      "sexo": "Masculino",
+      "estadoCivil": "Solteiro"
+    },
+    {
+      "nome": "qwewqewq",
+      "endereco": "qwewqeqw",
+      "dataNascimento": "qwewqeqw",
+      "cpf": "qweqweqw",
+      "sexo": "qweqe",
+      "estadoCivil": "qweqweq",
+      "id": 3
+    }
+  ]
+}

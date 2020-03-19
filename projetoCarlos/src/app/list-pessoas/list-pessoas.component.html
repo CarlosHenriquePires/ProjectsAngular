@@ -1,0 +1,41 @@
+<div class="container custom-container-2">
+  <div class="no-data text-center" *ngIf="Pessoa.length == 0">
+    <button class="btn btn-outline-primary" routerLink="/create-pessoa">Cadastrar Pessoa</button>
+  </div>
+  <div *ngIf="Pessoa.length !== 0">
+    <h3 class="mb-3 text-center">Lista de Pessoas</h3>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Pessoa Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Data Nascimento</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Estado Civil</th>
+            <th scope="col">Funções</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pessoa of Pessoa">
+            <td>{{pessoa.id}}</td>
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.endereco}}</td>
+            <td>{{pessoa.dataNascimento}}</td>
+            <td>{{pessoa.cpf}}</td>
+            <td>{{pessoa.sexo}}</td>
+            <td>{{pessoa.estadoCivil}}</td>
+            <td>
+              <span class="edit" routerLink="/pessoa-edit/{{pessoa.id}}">Editar</span>
+              <span class="delete" (click)="deletePessoa(pessoa.id)">Delete</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>

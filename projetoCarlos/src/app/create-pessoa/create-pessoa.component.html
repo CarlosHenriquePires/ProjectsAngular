@@ -1,0 +1,34 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Cadastrar Pessoa</h3>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="pessoa.nome" class="form-control" placeholder="Nome">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="pessoa.endereco" class="form-control" placeholder="Endereço">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="pessoa.dataNascimento" class="form-control" placeholder="Data de Nascimento">
+    </div>
+    
+    <div class="form-group">
+      <input type="text" [(ngModel)]="pessoa.cpf" class="form-control" placeholder="CPF">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="pessoa.sexo" class="form-control" placeholder="Sexo">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="pessoa.estadoCivil" class="form-control" placeholder="Estado Civil">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="addPessoa()">Criar Pessoa</button>
+    </div>
+
+  </div>
+</div>
